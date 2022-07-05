@@ -1,7 +1,8 @@
+import react from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { GiShoppingCart } from 'react-icons/gi';
+import CartWidget from './CartWidget';
 
 
 const NavBar = () => {
@@ -16,7 +17,7 @@ const NavBar = () => {
                   <Nav.Link href="#pricing">Modelos</Nav.Link>
                 </Nav>
                 <div className="cart">
-                 <GiShoppingCart color='white' fontSize='25px'/>
+                 <CartWidget />
                 </div>
               </Container>
             </Navbar>

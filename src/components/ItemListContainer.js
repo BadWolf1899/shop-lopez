@@ -1,10 +1,15 @@
+import react from 'react';
 import Container from 'react-bootstrap/Container';
 
-const ItemListContainer = () => {
+const ItemListContainer = (props) => {
     return (
+      <>
+      <Container>
       <div className="greeting">
         <h1>Hello World! 👋👋</h1>
       </div>
+      </Container>
+      </>
     );
 }
 
