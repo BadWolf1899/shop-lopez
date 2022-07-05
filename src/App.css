@@ -13,15 +13,24 @@
   }
 }
 
+body {
+  background-color: #fff6f6e7;
+  color: rgba(49, 47, 65, 0.993);
+  font-family: Arial;
+  text-align: center;
+  font-size: large;
+}
+
+
 .App-header {
-  background-color: #282c34;
+  background-color: #3a71df;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(4, 247, 255);
 }
 
 .App-link {
