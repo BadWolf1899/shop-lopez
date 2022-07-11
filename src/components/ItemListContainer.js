@@ -1,16 +1,16 @@
-import react from 'react';
-import Container from 'react-bootstrap/Container';
+import React from 'react';
+import ItemCount from './ItemCount';
 
-const ItemListContainer = (props) => {
-    return (
+const ItemListContainer = ({greeting}) => {
+   
+  const onAdd = (param) => {console.log ('La cantidad comprada es' + param)}
+  
+  return (
       <>
-      <Container>
-      <div className="greeting">
-        <h1>Hello World! 👋👋</h1>
-      </div>
-      </Container>
+      <div>{greeting}</div>
+      <ItemCount initial={100} stock={1500} onAdd={onAdd} />
       </>
-    );
+    )
 }
 
 export default ItemListContainer;
