@@ -1,18 +1,18 @@
-import react, {useState}  from 'react';
+import React, {useState}  from 'react';
 
-const ItemCount = ([ initial, stock, onAdd ]) => {
+const ItemCount = ( {initial, stock, onAdd} ) => {
 
     const [counter, setCounter] = useState(initial)
   
     const increase = () =>{
         if(counter < stock ){
-            const aux = counter+100
+            const aux = counter+1
             setCounter(aux)
     }
 }
     const decrease = () =>{
         if(counter > initial ){
-            const aux = counter-100
+            const aux = counter-1
             setCounter(aux)
     }
 }
@@ -20,8 +20,8 @@ const ItemCount = ([ initial, stock, onAdd ]) => {
     return (
     <div>
         <div>
-            <button onClick={decrease}>-</button>
             <p>{counter}</p>
+            <button onClick={decrease}>-</button>
             <button onClick={increase}>+</button>
         </div>
         <button onClick={onAdd}>Agregar al carrito</button>
@@ -29,4 +29,4 @@ const ItemCount = ([ initial, stock, onAdd ]) => {
     )
 }
 
-export default ItemCount
+export default ItemCount;
