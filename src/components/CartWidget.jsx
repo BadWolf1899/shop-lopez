@@ -1,4 +1,3 @@
-import react from 'react';
 import Container from 'react-bootstrap/Container';
 import { GiShoppingCart } from 'react-icons/gi';
 
