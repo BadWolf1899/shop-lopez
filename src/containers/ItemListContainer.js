@@ -3,7 +3,7 @@ import ItemCount from '../components/ItemCount';
 
 const ItemListContainer = ({greeting}) => {
    
-  const onAdd = (param) => {console.log (param+" unidades agregadas al carrito.")}
+  const onAdd = (param) => alert("Selección agregada al carrito:"+param+" unidades.")
   
   return (
       <>
