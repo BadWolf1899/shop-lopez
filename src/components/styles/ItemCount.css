@@ -1,0 +1,60 @@
+.counter{
+  width: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+.btnPlus, .btnMinus{
+  display: block;
+	float: center;
+  background: #fcfcfc;
+	border: none;
+  border-radius: 150px;
+	font-size: 25px;
+	font-weight: 200;
+	height: 80%;
+	padding: 0 13px;	
+  line-height: 38px;
+  align-items: center;
+  
+ }
+ .btnPlus:hover, .btnMinus:hover {
+	background: #5a5a5a;
+	color: #fff;
+	cursor: pointer;
+}
+
+ .count{
+  font-size: 19px;
+	line-height: 50px;
+	width: 70px;
+	text-align: center;
+  }
+
+
+ .btnAdd{
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border: 2px solid #212529;
+    background: #212529;
+  }
+
+  .btnAdd:hover {
+    background: #fff;
+    color: #212529
+  }
+ 
+
+ body {
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
