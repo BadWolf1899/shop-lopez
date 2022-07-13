@@ -1,5 +1,6 @@
 .counter{
   width: 40px;
+  padding: 1% 1%;	
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,18 +10,18 @@
 	float: center;
   background: #fcfcfc;
 	border: none;
-  border-radius: 150px;
-	font-size: 25px;
-	font-weight: 200;
-	height: 80%;
-	padding: 0 13px;	
-  line-height: 38px;
-  align-items: center;
-  
+  border-radius: 3px;
+	font-size: 20px;
+	font-weight: 250;
+	height: 50%;
+	padding: 50%;	
+  line-height: 50%;
+ 
  }
+
  .btnPlus:hover, .btnMinus:hover {
-	background: #5a5a5a;
-	color: #fff;
+	background: #eeeeee;
+	color: rgb(12, 12, 12);
 	cursor: pointer;
 }
 
@@ -28,6 +29,8 @@
   font-size: 19px;
 	line-height: 50px;
 	width: 70px;
+  margin-right: 25px;
+  margin-left: 25px;
 	text-align: center;
   }
 
@@ -35,6 +38,7 @@
  .btnAdd{
     min-width: 130px;
     height: 40px;
+    border-radius: 7px;
     color: #fff;
     padding: 5px 10px;
     font-weight: bold;
@@ -45,6 +49,7 @@
     outline: none;
     border: 2px solid #212529;
     background: #212529;
+    margin-left: 10px;
   }
 
   .btnAdd:hover {
