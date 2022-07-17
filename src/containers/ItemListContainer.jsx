@@ -1,9 +1,8 @@
 import React from 'react';
-import ItemCount from '../components/ItemCount';
-import {Toaster, toast} from 'react-hot-toast';
 import ItemList from './ItemList';
 import { useState } from 'react';
 import { useEffect } from 'react';
+
 
 
 const glasses = [
@@ -26,19 +25,12 @@ const ItemListContainer = ({greeting}) => {
 
   },[])
 
-  const onAdd = (param) =>{ 
-    console.log ('Compraste '+(param)+ ' unidades');
-    toast ('Agregaste '+(param)+ ' a tu carrito');
-  }
+
   
   return (
       <>
       <div>{greeting}</div>
-      <ItemCount initial={1} stock={20} onAdd={onAdd} />
-      <Toaster
-        position="bottom-right"
-        reverseOrder={true}
-      />
+      <p><h2>También podría interesarte</h2></p>
       <ItemList data={data} />
       </>
     );
