@@ -3,10 +3,10 @@ import './styles/Item.css';
 
 const Item = ({info}) => {
   return (
-    <a href='' className='glasses'>
+    <div className='glasses'>
         <img className='glassesimg' src= {info.image} alt='' />
         <p>{info.title}</p>
-    </a>
+    </div>
   );
 }
 

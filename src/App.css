@@ -1,11 +1,5 @@
-.App {
-  text-align: center;
-}
-
-body {
-  background-color: #fff6f6e7;
-  color: rgba(49, 47, 65, 0.993);
-  font-family: Arial;
-  text-align: center;
-  font-size: large;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
