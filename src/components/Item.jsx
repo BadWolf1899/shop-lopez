@@ -4,7 +4,7 @@ import "./styles/Item.css";
 
 const Item = ({ info }) => {
 	return (
-		<Link to={`/detail/${info.id}`} className="glass">
+		<Link to={`/detail/${info.Id}`} className="glass">
 			<img className="glassesimg" src={info.image} alt="" />
 			<p>{info.title}</p>
 		</Link>

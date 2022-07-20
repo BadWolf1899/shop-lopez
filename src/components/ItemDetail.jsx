@@ -6,6 +6,7 @@ import './styles/ItemDetail.css';
 
 
 const ItemDetail = ( {data} ) => {
+  console.log({data});
 
   const onAdd = (param) =>{ 
     console.log ('Compraste '+(param)+ ' unidades');
@@ -19,7 +20,6 @@ const ItemDetail = ( {data} ) => {
          <img className='detail_image' src={data.image} alt="" /> 
           <div className='content'>
             <h2>{data.title}</h2>
-            <p>{data.description}</p>
             <ItemCount initial={1} stock={20} onAdd={onAdd} />
             <Toaster
         position="bottom-right"

@@ -35,7 +35,7 @@ import { useParams } from 'react-router-dom';
         }, 1000);
       });
       getData.then((res) =>
-			setData(res.find((glass) => glass.id === parseInt(detailId))),
+			setData(res.find((glass) => glass.Id === detailId)),
 		);
 	}, [detailId]);
 
