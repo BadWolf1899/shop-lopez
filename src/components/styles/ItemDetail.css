@@ -1,6 +1,16 @@
 .detailContainer {
-    width: 90%;
-    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 3rem 1rem;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: fixed;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    box-shadow: 0 5px 10px #242424;
 
 }
 
@@ -15,7 +25,7 @@
     margin-bottom: 3rem;
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+
 }
 
 .detail_image {
@@ -25,6 +35,12 @@
 @media screen and (min-width:768px) {
     .detail_image {
         width: 50%;
+    }
+}
+
+@media screen and (max-height:400px) {
+    .detail_image {
+        height: 50%;
     }
 }
 

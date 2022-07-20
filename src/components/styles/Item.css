@@ -1,8 +1,27 @@
 .glasses{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 3rem 1rem;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: fixed;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+    box-shadow: 0 5px 10px #242424;
 }
 
-.glassesimg{
-    width: 70%;
+.glassesimg {
+    width: 25%;
+
+}
+
+
+
+@media screen and (min-height:200px) {
+    .glassesimg {
+        height: 50%;
+    }
 }

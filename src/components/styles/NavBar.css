@@ -1,0 +1,15 @@
+.cart_badge{
+position: absolute;
+top: 0.3rem;
+right: 19rem;
+width: 1.5rem;
+border-radius: 50%;
+background-color: rgb(216, 49, 49);
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0;
+color: rgb(235, 225, 225);
+font: 1.5rem;
+font-weight: 700;
+}
