@@ -10,7 +10,7 @@ const NavBar = () => {
           <>
             <Navbar expand="lg" bg="dark" variant="dark">
               <Container>
-                <Navbar.Brand to='/'>VITRA</Navbar.Brand>
+                <NavLink to='/'>VITRA</NavLink>
                 <Nav className="me-auto">
                   <NavLink to='/'>Inicio</NavLink>
                   <NavLink to='/category/receta'>Armazones de Receta</NavLink>
