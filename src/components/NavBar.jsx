@@ -19,7 +19,6 @@ const NavBar = () => {
                 </Nav>
                 <div className="cart">
                  <NavLink className="navlink" to='/cart'><CartWidget />
-                 <span className="cart_badge">0</span>
                  </NavLink>
                 </div>
               </Container>

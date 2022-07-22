@@ -1,15 +1,16 @@
-import React, { useContext } from 'react';
+import React, { useState } from 'react';
 import { toast, Toaster } from 'react-hot-toast';
 import ItemCount from './ItemCount';
 import './styles/ItemDetail.css';
+import {Link} from 'react-router-dom';
 
 
 
 const ItemDetail = ( {data} ) => {
-  console.log({data});
+  const[goToCart, setGoToCart] = useState(false);
 
   const onAdd = (param) =>{ 
-    console.log ('Compraste '+(param)+ ' unidades');
+    setGoToCart (true);
     toast ('Agregaste '+(param)+ ' a tu carrito');
   }
 
@@ -21,8 +22,10 @@ const ItemDetail = ( {data} ) => {
           <div className='content'>
             <h2>{data.title}</h2>
             <p>{data.description}</p>
-
-            <ItemCount initial={1} stock={20} onAdd={onAdd} />
+            { 
+            goToCart ? <Link to="/cart">Ir al carrito</Link>
+            : <ItemCount initial={1} stock={30} onAdd={onAdd}/>
+            }
             <Toaster
         position="bottom-right"
         reverseOrder={true}/>
