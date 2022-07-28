@@ -17,6 +17,7 @@ font-weight: 700;
 .navbar{
     top: 0;
     display:flex;
+    margin-bottom: 10px;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;

@@ -9,10 +9,10 @@ const ItemDetail = ( {data} ) => {
   const[goToCart, setGoToCart] = useState(false);
   const {addProduct} = useCartContext();
 
-  const onAdd = (amount) =>{ 
+  const onAdd = (quantity) =>{ 
     setGoToCart (true);
-    toast ('Agregaste '+(amount)+ ' a tu carrito');
-    addProduct (data, amount);
+    toast ('Agregaste '+(quantity)+ ' a tu carrito');
+    addProduct (data, quantity);
   }
 
   return (
@@ -26,7 +26,7 @@ const ItemDetail = ( {data} ) => {
             goToCart ? <Link to="/cart">Terminar compra</Link>
             : <ItemCount initial={1} stock={15} onAdd={onAdd}/>
             }
-            < Toaster
+            < Toaster className="toaster"
         position="bottom-right"
         reverseOrder={true}/>
           
