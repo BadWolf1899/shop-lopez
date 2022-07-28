@@ -38,4 +38,33 @@
 .content {
     padding-left: 3 rem;
     width: 50%;
+    color: rgb(3, 218, 168);
+    font-size: 20px;
+    font-weight: bold;
+  
 }
+
+.cardsglass {
+    font-family: futura-pt,sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: transparent;
+    text-decoration: none;
+    line-height: 1.875rem;
+    color: black;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .cardsglass img {
+    border-bottom: 3px solid #353535;
+  }
+
+  .toaster{
+    background-color: #353535;
+    color:antiquewhite;
+    font-size: 20px;
+  }
+  

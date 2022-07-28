@@ -3,35 +3,34 @@ import { toast, Toaster } from 'react-hot-toast';
 import ItemCount from './ItemCount';
 import './styles/ItemDetail.css';
 import {Link} from 'react-router-dom';
-
-
+import {useCartContext} from "../context/CartContext";
 
 const ItemDetail = ( {data} ) => {
   const[goToCart, setGoToCart] = useState(false);
+  const {addProduct} = useCartContext();
 
-  const onAdd = (param) =>{ 
+  const onAdd = (amount) =>{ 
     setGoToCart (true);
-    toast ('Agregaste '+(param)+ ' a tu carrito');
+    toast ('Agregaste '+(amount)+ ' a tu carrito');
+    addProduct (data, amount);
   }
 
   return (
     <>
-      <div className='detailContainer'>
-        <div className='detail'>
-         <img className='detail_image' src={data.image} alt="" /> 
+      <div className='cardsglass'>
+         <img className='detail_image' src={data.image} alt={data.title} width="300px"/> 
           <div className='content'>
-            <h2>{data.title}</h2>
             <p>{data.description}</p>
+          </div>
             { 
-            goToCart ? <Link to="/cart">Ir al carrito</Link>
-            : <ItemCount initial={1} stock={30} onAdd={onAdd}/>
+            goToCart ? <Link to="/cart">Terminar compra</Link>
+            : <ItemCount initial={1} stock={15} onAdd={onAdd}/>
             }
-            <Toaster
+            < Toaster
         position="bottom-right"
         reverseOrder={true}/>
-          </div>
+          
         </div>
-      </div>
     </>
 
   )

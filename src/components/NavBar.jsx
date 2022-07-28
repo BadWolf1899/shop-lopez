@@ -8,14 +8,13 @@ import './styles/NavBar.css'
 const NavBar = () => {
         return (
           <>
-            <Navbar expand="lg" bg="dark" variant="dark">
+            <Navbar className="navbar" >
+              <NavLink className="logo" to='/'>VITRA</NavLink>
               <Container>
-                <NavLink to='/'>VITRA</NavLink>
                 <Nav className="me-auto">
-                  <NavLink to='/'>Inicio</NavLink>
-                  <NavLink to='/category/receta'>Armazones de Receta</NavLink>
-                  <NavLink to='/category/sol'>Lentes de Sol</NavLink>
-                  <NavLink to='/category/accesorios'>Accesorios</NavLink>
+                  <NavLink className="me-auto" to='/category/receta'>Armazones de Receta</NavLink>
+                  <NavLink className="me-auto" to='/category/sol'>Lentes de Sol</NavLink>
+                  <NavLink className="me-auto" to='/category/accesorios'>Accesorios</NavLink>
                 </Nav>
                 <div className="cart">
                  <NavLink className="navlink" to='/cart'><CartWidget />

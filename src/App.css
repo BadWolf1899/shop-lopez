@@ -1,4 +1,32 @@
-*{
-  margin: 0 auto;
-  padding: 0 auto;
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: black;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  color: black;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h2{
+  font-size: 2em;
 }

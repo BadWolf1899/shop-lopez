@@ -10,6 +10,53 @@ align-items: center;
 justify-content: center;
 padding: 0;
 color: rgb(235, 225, 225);
-font: 1.5rem;
+font: 3rem;
 font-weight: 700;
+}
+
+.navbar{
+    top: 0;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #000000;
+    padding: 1rem 4rem;
+    margin: 0 auto;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.047);
+    z-index: 12;
+    position: fixed;
+    text-decoration: none;
+}
+
+.logo{
+    padding-top: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 400;
+    font-family: furura-pt, sans-serif;
+    text-decoration: none;
+}
+
+.me-auto{
+    justify-items: center;
+    align-items: flex-end;
+    margin-left: 6rem;
+    padding-top: 2.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: furura-pt, sans-serif;
+    font-size: 15px;
+    justify-content: center;
+    right: 25rem;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.me-auto :hover{
+    color: #ffffff;
+text-decoration: underline;
 }

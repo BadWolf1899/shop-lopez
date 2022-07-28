@@ -1,16 +1,69 @@
-.glasses{
-    grid-template-rows: auto;
-}
-
 .glassesimg {
-    width: 25%;
+width: 100%;    
+padding: 1rem;
+transition: transform 750ms;
+  will-change: transform;  
+}
 
+.glassesimg :hover{
+    width: 160%;
+}
+
+.glass{
+    text-align: center;
+color: rgb(40, 40, 40);
+text-decoration: none;
+font-weight: 600;
+    font-size: 1.5rem;
+    margin: .625rem 0;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+  background-color: transparent;
+}
+
+.glass :hover{
+    color: rgb(0, 177, 153);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .glass {
+      transition: none;
+    }
+  }
+
+.cardsGlass {
+
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 2rem;
+    margin: .5rem .5rem .5rem .5rem;
+    border: transparent;
+    box-shadow: 0 0 5px #35353500, 0 0 15px #35353518;
+    display: block;
+    flex-basis: 400px;
+    float: none;
+    box-sizing: border-box;
+    flex-grow: 430px;
+    transition: transform 750ms;
+  will-change: transform;  
 }
 
 
+.title{
+    margin: .625rem 0;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+  transition: font-size .4s ease-in-out;
+  background-color: transparent;
+}
 
-@media screen and (min-height:200px) {
-    .glassesimg {
-        height: 50%;
-    }
+.price{
+    color: #000;
+font-size: 1rem;
+font-family: proxima-nova,sans-serif;
+font-weight: 400;
+letter-spacing: .3px;
+line-height: 1.2;
+margin: .25rem 0 1.25rem;
+background-color: transparent;
 }

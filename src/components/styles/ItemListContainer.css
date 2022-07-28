@@ -1,7 +1,12 @@
-.wrapper{
-    display: grid;
-  grid-template: 150px / auto auto auto;
-  grid-gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
-}
+.cards{
+    display: flex;
+    background-color: #ffffff63;
+    list-style-type: none;
+    padding: 3%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-decoration: none;
+  }
+
+
+  

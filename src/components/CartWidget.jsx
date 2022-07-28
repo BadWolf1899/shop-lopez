@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container';
 import { GiShoppingCart } from 'react-icons/gi';
 
 const CartWidget = () => {
+  
     return (
       <>
           <Container>

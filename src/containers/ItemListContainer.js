@@ -3,7 +3,7 @@ import ItemList from './ItemList';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import '../components/styles/ItemListContainer.css';
+import "../components/styles/ItemListContainer.css"
 
 
 
@@ -51,9 +51,11 @@ const ItemListContainer = ({ texto }) => {
 
   
   return (
-    <wrapper className="catalogue">
+    <>
+    <div className= "cards" >
       <ItemList  data={data} />
-    </wrapper >  
+    </div>
+    </>
     );
 }
 
