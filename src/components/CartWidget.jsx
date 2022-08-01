@@ -7,7 +7,7 @@ const CartWidget = () => {
       <>
           <Container>
             <div className="cart">
-             <GiShoppingCart color='white' fontSize='25px'/>
+             <GiShoppingCart color='white' fontSize='29px'/>
             </div>
           </Container>
       </>
