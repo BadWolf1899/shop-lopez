@@ -1,26 +1,9 @@
-.detailContainer {
-    
-    align-items: center;
-   
-
-}
-
-@media screen and (min-width:768px) {
-    .detailContainer{
-        width: 70%;
-    }
-}
-
-.detail {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    width: 100%;
-    display: flex;
-
-}
-
 .detail_image {
     width: 100%;
+    display: flex;
+    margin-right: 5rem;
+    margin-left: 10rem;
+    background-color: rgb(255, 255, 255);
 }
 
 @media screen and (min-width:768px) {
@@ -36,30 +19,27 @@
 }
 
 .content {
-    padding-left: 3 rem;
     width: 50%;
-    color: rgb(3, 218, 168);
-    font-size: 20px;
-    font-weight: bold;
-  
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 100;
 }
 
 .cardsglass {
+    margin-top: 6rem;
     font-family: futura-pt,sans-serif;
     font-weight: 600;
     font-size: 1rem;
     text-transform: uppercase;
-    text-align: center;
     background-color: transparent;
     text-decoration: none;
-    line-height: 1.875rem;
     color: black;
     padding: 20px;
+    flex-basis: 400px;
     box-sizing: border-box;
-  }
-  
-  .cardsglass img {
-    border-bottom: 3px solid #353535;
+    flex-grow: 300px;
+    display: flex;
+    background-color: rgba(171, 112, 10, 0.258);
   }
 
   .toaster{
@@ -67,4 +47,51 @@
     color:antiquewhite;
     font-size: 20px;
   }
+
+  .title{
+margin-top: 4rem;
+background-color: transparent;
+font-size: 25px;
+color: #000000;
+text-align: right;
+font-weight: normal;
+display: flex;
+}
+
+.description{
+    margin-top: 2rem;
+}
+
+.price{
+    color: #000;
+font-family: proxima-nova,sans-serif;
+font-weight: 400;
+text-align: right;
+letter-spacing: .3px;
+line-height: 1.2;
+margin-top: 3rem;
+margin-bottom: 7rem;
+background-color: transparent;
+font-size: 22px;
+line-height: inherit;
+font-weight: bold;
+display: flex;
+}
+
+.compra{
+padding: 0;
+line-height: inherit;
+box-sizing: inherit;
+font-size: 19px;
+color: #000000;
+text-align: right;
+font-weight: 500;
+text-decoration: none;
+}
+
+.compra :hover{
+    color: olivedrab;
+    text-decoration: underline;
+}
+
   

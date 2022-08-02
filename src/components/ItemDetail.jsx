@@ -18,19 +18,20 @@ const ItemDetail = ( {data} ) => {
   return (
     <>
       <div className='cardsglass'>
-         <img className='detail_image' src={data.image} alt={data.title} width="300px"/> 
+         <img className='detail_image' src={data.image} alt="" width="300px"/> 
           <div className='content'>
-            <p>{data.title}</p>
-            <p>{data.description}</p>
-          </div>
+            <p className="title">{data.title}</p>
+            <p className="description">{data.description}</p>
+            <p className="price">USD {data.price}</p>
+          
             { 
-            goToCart ? <Link to="/cart">Terminar compra</Link>
-            : <ItemCount initial={1} stock={15} onAdd={onAdd}/>
+            goToCart ? <Link className="compra" to="/cart">Terminar compra</Link>
+            : <ItemCount className="compra" initial={1} stock={15} onAdd={onAdd}/>
             }
             < Toaster className="toaster"
         position="bottom-right"
         reverseOrder={true}/>
-          
+          </div>
         </div>
     </>
 

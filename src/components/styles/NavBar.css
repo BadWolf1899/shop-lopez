@@ -37,19 +37,21 @@ font-weight: 700;
     font-weight: 400;
     font-family: furura-pt, sans-serif;
     text-decoration: none;
+    margin-top: -0.7rem;
+    margin-bottom: 0.7rem;
 }
 
 .me-auto{
     justify-items: center;
     align-items: flex-end;
     margin-left: 1rem;
-    padding-top: 2.5rem;
+    padding-top: 3rem;
     font-weight: 300;
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
     font-family: furura-pt, sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     justify-content: center;
     right: 25rem;
     padding: 8px;

@@ -11,7 +11,7 @@ const NavBar = () => {
           <>
             <Navbar className="navbar" >
               <NavLink className="logo" to='/'> <Vitra /> </NavLink>
-              <Container>s
+              <Container>
                 <Nav className="me-auto">
                   <NavLink className="me-auto" to='/category/receta'>Armazones de Receta</NavLink>
                   <NavLink className="me-auto" to='/category/sol'>Lentes de Sol</NavLink>

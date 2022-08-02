@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ItemCart from '../containers/ItemCart';
 import {useCartContext} from "../context/CartContext";
+import "./styles/ItemCart.css"
 
 const Cart = () => {
 	const { cart, totalPrice } = useCartContext();
@@ -20,7 +21,7 @@ return (
     {cart.map((product) => (
       <ItemCart key={product.id} product={product} />
     ))}
-    <p>total: {totalPrice()}</p>
+    <p className="total">total: USD {totalPrice()}</p>
   </>
 );
 };
