@@ -50,7 +50,7 @@ return (
       addProduct,
       totalPrice,
       totalProducts,
-      cart
+      cart,
     }}
   >
     {children}

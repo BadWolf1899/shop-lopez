@@ -4,7 +4,7 @@ import ItemCart from '../containers/ItemCart';
 import {useCartContext} from "../context/CartContext";
 
 const Cart = () => {
-  const {cart, totalPrice} = useCartContext();
+	const { cart, totalPrice } = useCartContext();
 
 if (cart.length === 0) {
   return (
@@ -15,13 +15,14 @@ if (cart.length === 0) {
   );
 }
 
-  return (
-    <>
-    {
-      cart.map ( product => <ItemCart key= {product.Id} product={product}/>)
-    } 
-    <p>Total: {totalPrice()} </p>
-    </> 
-  )
-}
+return (
+  <>
+    {cart.map((product) => (
+      <ItemCart key={product.Id} product={product} />
+    ))}
+    <p>total: {totalPrice()}</p>
+  </>
+);
+};
+
 export default Cart;
