@@ -20,6 +20,7 @@ const ItemDetail = ( {data} ) => {
       <div className='cardsglass'>
          <img className='detail_image' src={data.image} alt={data.title} width="300px"/> 
           <div className='content'>
+            <p>{data.title}</p>
             <p>{data.description}</p>
           </div>
             { 

@@ -10,10 +10,10 @@ const CartProvider = ({ children }) => {
   console.log("en el carrito hay:", cart);
 
 const addProduct = (item, quantity) => {
-  if (isInCart(item.Id)) {
+  if (isInCart(item.id)) {
     setCart(
       cart.map((product) => {
-        return product.Id === item.Id
+        return product.id === item.id
           ? { ...product, quantity: product.quantity + quantity }
           : product;
       }),
@@ -35,11 +35,11 @@ const totalProducts = () =>
 
 const clearCart = () => setCart([]);
 
-const isInCart = (Id) =>
-  cart.find((product) => product.Id === Id) ? true : false;
+const isInCart = (id) =>
+  cart.find((product) => product.id === id) ? true : false;
 
-const removeProduct = (Id) =>
-  setCart(cart.filter((product) => product.Id !== Id));
+const removeProduct = (id) =>
+  setCart(cart.filter((product) => product.id !== id));
 
 return (
   <CartContext.Provider
