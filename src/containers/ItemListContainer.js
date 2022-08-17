@@ -5,6 +5,7 @@ import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import "../components/styles/ItemListContainer.css"
 import {getFirestore, collection, getDocs, query, where} from "firebase/firestore";
+import Baner from '../components/Baner';
 
 export const ItemListContainer = ({ texto }) => {
 	const [data, setData] = useState([]);
@@ -34,6 +35,7 @@ export const ItemListContainer = ({ texto }) => {
   
   return (
     <>
+	<Baner />
     <div className= "cards" >
       <ItemList  data={data} />
     </div>

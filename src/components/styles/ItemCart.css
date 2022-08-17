@@ -12,15 +12,18 @@
     box-sizing: border-box;
     flex-grow: 300px;
     display: flex;
-    background-color: rgba(47, 30, 1, 0.146);
+    background-color: rgba(243, 214, 241, 0.235);
   }
 
 .imgproduct {
     height: 150px;
     display: flex;
+    border-width: 2px;
+    border-color: #000000;
     margin-right: 5rem;
     margin-left: 10rem;
-    background-color: rgba(255, 255, 255, 0.477);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0, 0, 2rem #00000045;
 }
 
  .title{
@@ -31,24 +34,25 @@ text-align: right;
 font-weight: 300;
 display: flex;
 margin-top: 0;
+margin-left: 0%;
 }
 
 .price {
     font-family: futura-pt,sans-serif;
     font-weight: 200;
-    font-size: 15px;
+    font-size: 20px;
     text-transform: uppercase;
     background-color: transparent;
     text-decoration: none;
     color: black;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .subtotal {
     font-family: futura-pt,sans-serif;
-    font-weight: 600;
-    font-size: 15px;
+    font-weight: 400;
+    font-size: 17px;
     text-transform: uppercase;
     background-color: transparent;
     text-decoration: none;
@@ -56,41 +60,94 @@ margin-top: 0;
     margin-top: 1rem;
 }
 
-  .quitar {
+  .quitar{
     min-width: 130px;
-    height: 40px;
-    border-radius: 7px;
-    color: #fff;
-    padding: 2px 2px;
-    font-weight: bold;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-top: 1.2rem;
+    text-decoration: underline;
+    text-align: left;
+    color: rgb(0, 0, 0);
     cursor: pointer;
     transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
     outline: none;
-    border: 2px solid #212529;
-    background: #212529;
-    margin-left: 0px;
- 
+background-color: #ffffff00; 
+border-color: #fffbfb00;
   }
 
-  .quitar :hover {
-    background: rgb(85, 85, 85);
-    border: 2px solid rgb(85, 85, 85);
-    color: #fff
+  .quitar:hover {
+    text-shadow: 0 0 .2rem rgb(255, 255, 255),
+    0 0 .2rem rgb(255, 255, 255),
+    0 0 2rem #fe13feb1,
+    0 0 0.8rem #f213fe86,
+    0 0 1.8rem #fe13fa78,
+    inset 0 0 1.3rem #fe13df87;   
+    color: rgb(255, 2, 217)
   }
+ 
 
   .total{
         font-family: futura-pt,sans-serif;
-        font-weight: 400;
-        font-size: 19px;
+        font-weight: 600;
+        font-size: 22px;
         text-transform: uppercase;
         background-color: transparent;
-        text-decoration: none;
-        color: black;
+        text-decoration-line: overline;
+        color: rgba(0, 0, 0, 0.801);
         margin-top: 2rem;
         text-align: center;
         margin-left: -15rem;
     }
+
+.empty{
+  margin-top: 10rem;
+  margin-left: 50rem;
+  text-align: center;
+font-size: 30px;
+box-sizing: border-box;
+display: flex;
+font-weight: 500;
+text-transform: uppercase;
+    }
+.bag{
+  margin-top: 5rem;
+  margin-left: 63rem;
+  text-align: center;
+font-size: 55px;
+box-sizing: border-box;
+display: flex;
+}
+    .collection{
+      justify-items: center;
+      align-items: flex-end;
+      margin-left: -28rem;
+      margin-top: 13rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #ff00f2;
+      font-family: furura-pt, sans-serif;
+      font-size: 20px;
+      justify-content: center;
+      right: 25rem;
+      padding: 2px 2px 2px 2px;
+      display: flex;
+      align-items: center;
+}
+
+    .collection :hover{
+      color: #ffffff;
+      box-sizing: border-box;
+      box-shadow: #000000;
+      text-shadow:
+      0 0 7px #df13fe,
+      0 0 10px rgba(242, 88, 237, 0.809),
+      0 0 21px rgba(247, 102, 250, 0.934),
+      0 0 42px #bc13fe,
+      0 0 82px #bc13fe,
+      0 0 92px #df13fe,
+      0 0 102px #bc13fe,
+      0 0 151px #bc13fe;
+  }
   
   

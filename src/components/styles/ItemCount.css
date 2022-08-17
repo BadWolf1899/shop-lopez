@@ -10,7 +10,7 @@
   display: block;
   background: #fcfcfc;
 	border: none;
-  border-radius: 3px;
+  border-radius: 100px;
 	font-size: 20px;
 	font-weight: 250;
 	height: 50%;
@@ -20,8 +20,14 @@
  }
 
  .btnPlus:hover, .btnMinus:hover {
-	background: #eeeeee;
 	color: rgb(12, 12, 12);
+  border: 2px solid #e9fcfa;
+  box-shadow: 0 0 .2rem rgb(255, 255, 255),
+0 0 .2rem rgb(255, 255, 255),
+0 0 1.8rem #13fefe8a,
+0 0 0.8rem #13fafe71,
+0 0 2rem #13f6fe78,
+inset 0 0 1.3rem #13fee687;
 	cursor: pointer;
 }
 
@@ -38,6 +44,8 @@
 
  .btnAdd{
     min-width: 130px;
+    font-size: 15px;
+    font-weight: 100;
     height: 40px;
     border-radius: 7px;
     color: #fff;
@@ -51,13 +59,20 @@
     border: 2px solid #212529;
     background: #212529;
     margin-left: 10px;
+    display: inline-block;
  
   }
 
   .btnAdd:hover {
-    background: rgb(85, 85, 85);
-    border: 2px solid rgb(85, 85, 85);
-    color: #fff
+    background: rgb(255, 255, 255);
+    border: 2px solid #e6fdfa;
+    box-shadow: 0 0 .2rem rgb(255, 255, 255),
+    0 0 .2rem rgb(255, 255, 255),
+    0 0 2rem #13fefeb1,
+    0 0 0.8rem #13fafe86,
+    0 0 1.8rem #13f6fe78,
+    inset 0 0 1.3rem #13fee687;   
+    color: rgba(7, 7, 7, 0.657)
   }
  
 

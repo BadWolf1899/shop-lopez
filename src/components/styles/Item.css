@@ -11,18 +11,17 @@ transition: transform 750ms;
 
 .glass{
     text-align: center;
-color: rgb(40, 40, 40);
-text-decoration: none;
-font-weight: 600;
-    font-size: 1.5rem;
-    margin: .625rem 0;
-  margin-top: 0.625rem;
-  margin-bottom: 0.625rem;
-  background-color: transparent;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 .glass :hover{
-    color: rgb(0, 177, 153);
+  text-shadow: 0 0 .2rem rgb(255, 255, 255),
+  0 0 .2rem rgb(255, 255, 255),
+  0 0 2rem #ff01ff93,
+  0 0 0.8rem #ee04fa,
+  0 0 1.8rem #fb06f7d1;
+  color: rgb(255, 255, 255)
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -32,9 +31,6 @@ font-weight: 600;
   }
 
 .cardsGlass {
-
-    text-transform: uppercase;
-    text-decoration: none;
     padding: 2rem;
     margin: .5rem .5rem .5rem .5rem;
     border: transparent;
@@ -48,14 +44,22 @@ font-weight: 600;
   will-change: transform;  
 }
 
-
 .title{
-    margin: .625rem 0;
-  margin-top: 0.625rem;
-  margin-bottom: 0.625rem;
+
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  text-justify: auto;
+  margin-left: 10rem;
+  margin-top: -2rem;
   transition: font-size .4s ease-in-out;
   background-color: transparent;
+  text-decoration: none;
 }
+
+
+
 
 .price{
     color: #000;

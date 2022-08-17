@@ -1,6 +1,7 @@
 import React from 'react';
 import {useCartContext} from "../context/CartContext"
 import "../components/styles/ItemCart.css"
+import {FaRegTrashAlt} from "react-icons/fa";
 
 const ItemCart = ({ product }) => {
     const { removeProduct } = useCartContext();
@@ -12,7 +13,7 @@ const ItemCart = ({ product }) => {
                 <p className="quantity">Unidades: {product.quantity}</p>
                 <p className="price">Precio USD {product.price}</p>
                 <p className="subtotal">Subtotal USD {product.quantity * product.price}</p>
-                <button className="quitar" onClick={() => removeProduct(product.id)}>Eliminar</button>
+                <button className="quitar" onClick={() => removeProduct(product.id)}><FaRegTrashAlt /></button>
             </div>
         </div>
     )

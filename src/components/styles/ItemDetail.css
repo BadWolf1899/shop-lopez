@@ -3,7 +3,9 @@
     display: flex;
     margin-right: 5rem;
     margin-left: 10rem;
+    border: radius 30px;
     background-color: rgb(255, 255, 255);
+    box-shadow: 0, 0, 10px #cc1bd555;
 }
 
 @media screen and (min-width:768px) {
@@ -20,7 +22,6 @@
 
 .content {
     width: 50%;
-    color: rgb(0, 0, 0);
     font-size: 15px;
     font-weight: 100;
 }
@@ -33,18 +34,17 @@
     text-transform: uppercase;
     background-color: transparent;
     text-decoration: none;
-    color: black;
-    padding: 20px;
-    flex-basis: 400px;
+    padding: 10px;
+    flex-basis: 200px;
     box-sizing: border-box;
-    flex-grow: 300px;
     display: flex;
-    background-color: rgba(171, 112, 10, 0.258);
+    flex-grow: 300px;
+    background-color: rgba(255, 255, 255, 0.258);
   }
 
   .toaster{
-    background-color: #353535;
-    color:antiquewhite;
+    background-color: #17f0ff;
+    color:rgb(0, 255, 255);
     font-size: 20px;
   }
 
@@ -60,38 +60,38 @@ display: flex;
 
 .description{
     margin-top: 2rem;
+    font-size: 15px;
+    font-weight: 100;
 }
 
 .price{
-    color: #000;
-font-family: proxima-nova,sans-serif;
 font-weight: 400;
-text-align: right;
-letter-spacing: .3px;
-line-height: 1.2;
-margin-top: 3rem;
-margin-bottom: 7rem;
-background-color: transparent;
-font-size: 22px;
-line-height: inherit;
-font-weight: bold;
-display: flex;
+font-size: 30px;
+margin-bottom: 5rem;
 }
 
 .compra{
-padding: 0;
-line-height: inherit;
-box-sizing: inherit;
+padding: 0rem;
 font-size: 19px;
 color: #000000;
 text-align: right;
 font-weight: 500;
 text-decoration: none;
+margin-top: 5rem;
 }
 
 .compra :hover{
-    color: olivedrab;
-    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-shadow:
+    0 0 7px #df13fe,
+    0 0 10px rgba(242, 88, 237, 0.809),
+    0 0 21px rgba(247, 102, 250, 0.934),
+    0 0 42px #bc13fe,
+    0 0 82px #bc13fe,
+    0 0 92px #df13fe,
+    0 0 102px #bc13fe,
+    0 0 151px #bc13fe;
 }
 
   

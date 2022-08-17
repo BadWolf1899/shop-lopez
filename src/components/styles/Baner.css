@@ -1,0 +1,22 @@
+.topper{
+    display: flex;
+    flex:auto;
+    flex-wrap: wrap;
+}
+
+.baner{
+    width: 1400px;
+    display: flex;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+.txt{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+    display: flex;
+    margin-left: 35rem;
+    margin-right: 35rem;
+    margin-top: 1rem;
+}

@@ -19,7 +19,7 @@ const ItemDetail = ( {data} ) => {
     <>
       <div className='cardsglass'>
          <img className='detail_image' src={data.image} alt="" width="300px"/> 
-          <div className='content'>
+          <div >
             <p className="title">{data.title}</p>
             <p className="description">{data.description}</p>
             <p className="price">USD {data.price}</p>

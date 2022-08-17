@@ -4,7 +4,12 @@ top: 1.5rem;
 right: 4rem;
 width: 2.3rem;
 border-radius: 50%;
-background-color: rgba(176, 41, 41, 0.569);
+box-shadow: 0 0 .2rem rgb(255, 255, 255),
+0 0 .2rem rgb(255, 255, 255),
+0 0 2rem #13fefeb1,
+0 0 0.8rem #13fafe86,
+0 0 2.8rem #13f6fe78,
+inset 0 0 1.3rem #13fee687;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -28,6 +33,7 @@ font-weight: 700;
     z-index: 12;
     position: fixed;
     text-decoration: none;
+    box-shadow: 0 0 3rem #00000096;
 }
 
 .logo{
@@ -39,6 +45,7 @@ font-weight: 700;
     text-decoration: none;
     margin-top: -0.7rem;
     margin-bottom: 0.7rem;
+    
 }
 
 .me-auto{
@@ -61,5 +68,13 @@ font-weight: 700;
 
 .me-auto :hover{
     color: #ffffff;
-text-decoration: underline;
+    text-shadow:
+    0 0 7px #df13fe,
+    0 0 10px rgba(242, 88, 237, 0.809),
+    0 0 21px rgba(247, 102, 250, 0.934),
+    0 0 42px #bc13fe,
+    0 0 82px #bc13fe,
+    0 0 92px #df13fe,
+    0 0 102px #bc13fe,
+    0 0 151px #bc13fe;
 }
