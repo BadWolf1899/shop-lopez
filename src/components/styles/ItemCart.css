@@ -26,16 +26,7 @@
     box-shadow: 0, 0, 2rem #00000045;
 }
 
- .title{
-background-color: transparent;
-font-size: 20px;
-color: #000000;
-text-align: right;
-font-weight: 300;
-display: flex;
-margin-top: 0;
-margin-left: 0%;
-}
+
 
 .price {
     font-family: futura-pt,sans-serif;
@@ -100,54 +91,61 @@ border-color: #fffbfb00;
     }
 
 .empty{
-  margin-top: 10rem;
-  margin-left: 50rem;
-  text-align: center;
+margin-top: 10rem;
+margin-left: 63rem;
+margin-right: 63rem;
+text-align: center;
 font-size: 30px;
 box-sizing: border-box;
 display: flex;
 font-weight: 500;
 text-transform: uppercase;
     }
+
 .bag{
-  margin-top: 5rem;
-  margin-left: 63rem;
-  text-align: center;
+margin-top: 5rem;
+margin-left: 75rem;
+margin-right: 75rem;
+text-align: center;
 font-size: 55px;
 box-sizing: border-box;
 display: flex;
 }
-    .collection{
+
+.collection{
       justify-items: center;
+      text-decoration-color: none;
+      text-emphasis-color: none;
       align-items: flex-end;
-      margin-left: -28rem;
-      margin-top: 13rem;
-      font-weight: 300;
+      margin-left: 65rem;
+      margin-right: 70rem;
+      margin-top: 6rem;
+      font-weight: 700;
       text-transform: uppercase;
       text-decoration: none;
-      color: #ff00f2;
-      font-family: furura-pt, sans-serif;
+      color: #5a0356;
+      font-family: sans-serif, sans-serif;
       font-size: 20px;
       justify-content: center;
       right: 25rem;
-      padding: 2px 2px 2px 2px;
       display: flex;
       align-items: center;
 }
 
-    .collection :hover{
-      color: #ffffff;
-      box-sizing: border-box;
-      box-shadow: #000000;
+.collection:hover {
+  text-decoration: none;
+  color: #ffffff;
       text-shadow:
-      0 0 7px #df13fe,
-      0 0 10px rgba(242, 88, 237, 0.809),
-      0 0 21px rgba(247, 102, 250, 0.934),
-      0 0 42px #bc13fe,
-      0 0 82px #bc13fe,
-      0 0 92px #df13fe,
-      0 0 102px #bc13fe,
-      0 0 151px #bc13fe;
-  }
+      0 0 7px #13feee,
+      0 0 10px rgba(88, 242, 239, 0.809),
+      0 0 21px rgba(102, 243, 250, 0.934),
+      0 0 42px #13fef6,
+      0 0 82px #13fef6,
+      0 0 92px #13f6fe,
+      0 0 102px #13eafe,
+      0 0 151px #13fefa;
+}
+
+
   
   

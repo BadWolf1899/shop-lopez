@@ -53,13 +53,11 @@ transition: transform 750ms;
   text-justify: auto;
   margin-left: 10rem;
   margin-top: -2rem;
+  text-transform: uppercase;
   transition: font-size .4s ease-in-out;
   background-color: transparent;
   text-decoration: none;
 }
-
-
-
 
 .price{
     color: #000;

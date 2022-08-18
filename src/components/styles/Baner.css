@@ -16,7 +16,13 @@
     text-align: center;
     font-weight: 600;
     display: flex;
-    margin-left: 35rem;
-    margin-right: 35rem;
+    margin-left: 32rem;
+    margin-right: 32rem;
     margin-top: 1rem;
+    color: azure;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    background-color: black;
 }
